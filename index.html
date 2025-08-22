@@ -61,9 +61,31 @@
   margin-top: 2px;
 }
 
+#caInfo {
+  font-size: 1.18rem;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 2px;
+}
+
 #scoreBox {
   font-weight: 700;
   color: #ffea00;
+  font-size: 1.25rem;
+  letter-spacing: 1.1px;
+  text-shadow: 0 2px 8px #000d, 0 0px 2px #ffea0055;
+  font-family: 'Share Tech Mono', 'Rajdhani', Arial, sans-serif;
+  padding: 3px 14px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #222236 60%, #191921 100%);
+  border: 1.5px solid #2c2c50;
+  box-shadow: 0 1.5px 6px #28287533;
+}
+
+#caBox {
+  font-weight: 700;
+  color: #54dcee;
   font-size: 1.25rem;
   letter-spacing: 1.1px;
   text-shadow: 0 2px 8px #000d, 0 0px 2px #ffea0055;
@@ -326,6 +348,7 @@
       }
       #gameTitle { font-size: 1.35rem; }
       #scoreBox { font-size: 1.08rem; }
+      #caBox { font-size: 1.08rem; }
     }
 
    /* --- MOBILE / PORTRAIT GAME LAYOUT --- */
@@ -460,6 +483,9 @@
   <div id="gameFrame">
     <div id="topBar">
       <div id="gameTitle">MEOWKYWAY: Spiral Surge</div>
+      <div id="caInfo">
+        <span id="caBox">Token CA: 3r1SRMupEFnYQbUfJG7W6nnP8tFt7jUYrLh3hk5Tjups</span>
+      </div>      
       <div id="topInfo">
         <span id="scoreBox">Score: 0</span>
         <!-- Add any icons/legend here if you want in the top bar -->
